@@ -12,7 +12,7 @@ TextLabel.BorderSizePixel = 0
 TextLabel.Position = UDim2.new(0, 0, 1, 0)
 TextLabel.Size = UDim2.new(0, 80, 0, 30)
 TextLabel.TextColor3 = Color3.new(1, 1, 1)
-TextLabel.TextAlignment = Enum.TextXAlignment.Right
+TextLabel.TextXAlignment = Enum.TextXAlignment.Right
 
 TextLabel.Parent = ScreenGui
 
