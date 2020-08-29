@@ -1,10 +1,19 @@
 local LocalPlayer = game:GetService("Players").LocalPlayer
 local ScreenGui = Instance.new("ScreenGui")
 ScreenGui.Name = "FPScounter"
+ScreenGui.ResetOnSpawn = false
 ScreenGui.Parent = LocalPlayer:WaitForChild("PlayerGui")
 
 local TextLabel = Instance.new("TextLabel")
 TextLabel.Name = "FPS"
+TextLabel.AnchorPoint = Vector2.new(0, 1)
+TextLabel.BackgroundTransparency = 1
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0, 0, 1, 0)
+TextLabel.Size = UDim2.new(0, 80, 0, 30)
+TextLabel.TextColor3 = Color3.new(1, 1, 1)
+TextLabel.TextAlignment = Enum.TextAlignment.Right
+
 TextLabel.Parent = ScreenGui
 
 local sampleSize = 20
