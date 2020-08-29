@@ -1,4 +1,11 @@
-local TextLabel = script.Parent
+local LocalPlayer = game:GetService("Players").LocalPlayer
+local ScreenGui = Instance.new("ScreenGui")
+ScreenGui.Name = "FPScounter"
+ScreenGui.Parent = LocalPlayer:WaitForChild("PlayerGui")
+
+local TextLabel = Instance.new("TextLabel")
+TextLabel.Name = "FPS"
+TextLabel.Parent = ScreenGui
 
 local sampleSize = 20
 
